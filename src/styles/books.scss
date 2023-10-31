@@ -1,0 +1,138 @@
+.books-wrapper{
+	border: 1px solid black;
+	margin: 20px;
+	.request{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		.books{
+			display: flex;
+			margin-bottom: 20px;
+			.image{
+				display: inline-block;
+				width: 49%;
+				margin-right: 30px;
+			}
+			.card{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+				width: 48%;
+				.author{
+					color: #5C6A79;
+					font-family: Open Sans;
+					font-size: 8px;
+					font-weight: 400;
+					margin-bottom: 3px;
+				}
+				.title{
+					color: #1C2A39;
+					font-family: Montserrat;
+					font-size: 12px;
+					font-weight: 700;
+					line-height: normal;
+					margin-bottom: 2px;
+				}
+				.rating{
+					display: flex;
+					margin-bottom: 3px;
+					.stars{
+							width: 50px;
+							height: 9px;
+							margin-top: 3px;
+							background-image: url("./img/icons/stars.jpg");
+							background-size: 100%;
+							overflow-y: hidden;
+							background-position: top 0 left 0;
+					}
+					.rating-count{
+						display: flex;
+						justify-content: space-between;
+						justify-items: center;
+						margin-left: 3px;
+						.count{
+							color: #5C6A79;
+							font-family: Open Sans;
+							font-size: 10px;
+							font-weight: 400;
+							line-height: normal;
+						}
+						.review{
+							width: 100%;
+							color: #5C6A79;
+							font-family: Open Sans;
+							font-size: 4px;
+							font-weight: 400;
+							line-height: normal;
+						}
+					}
+				}
+				.description{
+						display: -webkit-box;
+						overflow: hidden;
+						-webkit-line-clamp: 3;
+						-webkit-box-orient: vertical;
+						margin-bottom: 10px;
+						max-height: 70px;
+						color: #5C6A79;
+						font-family: Open Sans;
+						font-size: 10px;
+						font-weight: 400;
+						line-height: normal;
+						text-align: justify;	
+				}
+				.price{
+					color: #1C2A39;
+					font-family: Montserrat;
+					font-size: 12px;
+					font-weight: 700;
+					margin-bottom: 4px;
+				}
+				.buy-button{
+					height: 30px;
+					margin-top: 10px;
+					margin-bottom: 7px;
+					color: #4C3DB2;
+					background-color: white;
+					border: 1px solid #4C3DB2;
+					font-family: Montserrat;
+					font-size: 8px;
+					font-weight: 700;
+					&.active-buy-button{
+						color: #1C2A39;
+						text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+						background-color: rgb(221, 191, 235);
+					}
+				}
+			}
+		}
+	}
+}
+.more-button{ 
+	width: 100px;
+	height: 30px;
+	margin: 20px 44% 0;
+	color: #4C3DB2;
+	font-family: Montserrat;
+	font-size: 8px;
+	font-weight: 700;
+}   
+@media (min-width: 767px){
+	.books-wrapper{
+		position: absolute;
+		top: 20px;
+		left: 145px;
+		width: 80%;
+		margin: 0;
+		.request{
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: space-between;
+			.books{
+				width: 45%;
+				margin-right: 20px;
+			}
+		}
+	}
+}
