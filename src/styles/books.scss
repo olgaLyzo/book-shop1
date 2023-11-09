@@ -1,5 +1,4 @@
 .books-wrapper{
-	border: 1px solid black;
 	margin: 20px;
 	.request{
 		display: flex;
@@ -110,9 +109,10 @@
 	}
 }
 .more-button{ 
+	display: block;
 	width: 100px;
 	height: 30px;
-	margin: 20px 44% 0;
+	margin: 20px auto;
 	color: #4C3DB2;
 	font-family: Montserrat;
 	font-size: 8px;
@@ -134,5 +134,6 @@
 				margin-right: 20px;
 			}
 		}
+		
 	}
 }

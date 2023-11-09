@@ -7,15 +7,17 @@
     <title>Book-shop</title>
   <script defer src="main.js"></script></head>
   <body class="body">
-    <header class="header-wrapper">
+    <header class="header">
       <div class="header-wrapper">
-          <a href="/" class="logo"></a>
+          <a href="/" class="logo">
+						<img src="assets/logo.svg" alt="img-logo" class="img-logo">
+					</a>
           <nav class="header-navigation">
             <ul>
-              <li><a href="#" class = "menu-element books active">BOOKS</a></li>
-              <li><a href="#" class = "menu-element audiobooks">AUDIOBOOKS</a></li>
-              <li><a href="#" class = "menu-element gifts">STATIONERY & GIFTS</a></li>
-              <li><a href="#" class = "menu-element blog">BLOG</a></li>
+              <li><a href="#" class = "menu-element books active">books</a></li>
+              <li><a href="#" class = "menu-element audiobooks">audiobooks</a></li>
+              <li><a href="#" class = "menu-element gifts">stationary & gifts</a></li>
+              <li><a href="#" class = "menu-element blog">blog</a></li>
             </ul>
           </nav>
         <div class="header-research-bar">
@@ -67,10 +69,11 @@
 					<a href="#technology">Technology</a>
 					<a href="#travel">Travel & Maps</a>
 				</nav>
-				<div class="request"></div>
+				<div class = "books-wrapper">
+					<div class="request"></div>
+					<button class="more-button">LOAD MORE</button>
+				</div>
 			</div>
-			<button class="more-button">LOAD MORE</button>
     </main>
-		
   </body>
 </html>
