@@ -5,7 +5,7 @@ const sliderImages = [{
 	url: "./assets/banner-2.svg",
 	title: "Top 10 books"
 },{
-	url: "./assets/banner-3.svg",
+	url: "./assets/banner-3.jpg",
 	title: "Cozy book selection"
 }];
 
